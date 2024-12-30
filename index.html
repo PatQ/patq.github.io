@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiet Santa‘s Love & Relief</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    	body {
+    		background: #1f3825;
+    		color: #fff;
+    		font-size: 1.3em;
+    		font-family: "Noto Sans", serif;
+    		font-optical-sizing: auto;
+			font-weight: 400;
+			font-style: normal;
+			padding: 1em;
+			margin: 0;
+			box-sizing: border-box;
+    	}
+    	body div {
+    		max-width: 800px;
+    		margin: auto;
+    	}
+    	header {
+    		text-align: center;
+    	}
+    	nav ul {
+    		margin: 0;
+    		padding: 0;
+    		border-bottom: 1px solid #fff;
+    	}
+    	nav ul li {
+    		display: inline-block;
+    		margin: 0;
+    		padding: 0.4em 0.5em;
+    	}
+    	nav ul li.active {
+    		background: #fff;
+    		color: #000;
+    	}
+    	a {
+    		color: #fff;
+    	}
+    	footer {
+    		margin: 3em 0;
+    		font-size: 0.7em;
+    	}
+    	section {
+		    display: none;
+		}
+		section:first-of-type {
+		    display: block;
+		}
+    </style>
+    <script type="text/javascript">
+    	document.addEventListener("DOMContentLoaded", () => {
+		    const navItems = document.querySelectorAll("nav ul li");
+		    const sections = document.querySelectorAll("section");
+
+		    // Map navigation items to their corresponding section IDs
+		    const languageMap = {
+		        "🇩🇪 Deutsch": "german",
+		        "🇬🇧 English": "english",
+		        "🇸🇾 العربية": "arabic",
+		        "🇹🇷 Türkçe": "turkish",
+		        "🇺🇦 Українська": "ukrainian",
+		        "🇵🇱 Polski": "polish"
+		    };
+
+		    // Function to show the selected section and hide the rest
+		    function showSection(languageKey) {
+		        const sectionId = languageMap[languageKey];
+		        sections.forEach(section => {
+		            if (section.id === sectionId) {
+		                section.style.display = "block";
+		            } else {
+		                section.style.display = "none";
+		            }
+		        });
+
+		        // Update the active class for navigation
+		        navItems.forEach(item => {
+		            if (item.textContent === languageKey) {
+		                item.classList.add("active");
+		            } else {
+		                item.classList.remove("active");
+		            }
+		        });
+		    }
+
+		    // Attach click event listeners to each navigation item
+		    navItems.forEach(item => {
+		        item.addEventListener("click", () => {
+		            const languageKey = item.textContent.trim(); // Use the full text content as the key
+		            showSection(languageKey);
+		        });
+		    });
+
+		    // Show the initial active section
+		    const initialActive = document.querySelector("nav ul li.active");
+		    if (initialActive) {
+		        const languageKey = initialActive.textContent.trim();
+		        showSection(languageKey);
+		    }
+		});
+    </script>
+  </head>
+  <body>
+  	<div>
+  	  <header>
+  	  	<img src="quietsanta.png" width="150">
+  	    <h1>Quiet Santa‘s Love & Relief</h1>
+  	   </header>
+	  <nav>
+	  	<ul>
+	  		<li class="active">🇩🇪 Deutsch</li>
+	  		<li>🇬🇧 English</li>
+	  		<li>🇸🇾 العربية</li>
+	  		<li>🇹🇷 Türkçe</li>
+	  		<li>🇺🇦 Українська</li>
+	  		<li>🇵🇱 Polski</li>
+	  	</ul>
+	  </nav>
+	  <section id="german">
+	  	<h2>Was ist Quiet Santa?</h2>
+	  	<p>
+	  		Quiet Santa ist ein Herzensprojekt, das 2025 endlich Realität wird – etwas, worüber ich schon seit Jahren nachdenke. Ich bin mit wenig aufgewachsen, und obwohl ich weit davon entfernt bin reich zu sein, geht es mir heute gut. Aber ich weiß, dass es vielen Menschen da draußen anders geht. Gerade Eltern – und vor allem alleinerziehende Eltern – tragen oft eine enorme Last, nicht nur für ihre Kinder zu sorgen, sondern auch diese besonderen Momente zu schaffen, die viele von uns so liebevoll aus der eigenen Kindheit in Erinnerung haben.
+	  	</p>
+	  	<p>
+	  		Ich habe keine Illusionen. Ich werde wahrscheinlich nicht das Leben vieler Menschen verändern können – vielleicht nicht einmal das Leben eines einzigen. Aber ich will es versuchen. Und ich hoffe, dass ich andere dazu bewegen kann, mitzumachen. Denn ich weiß, wie schwer das Leben manchmal sein kann. Und manchmal reicht ein kleiner Funke, ein kleines Licht am Ende des Tunnels, um wieder Hoffnung zu schöpfen und die Kraft zu finden, Dinge zum Besseren zu wenden.
+	  	</p>
+	  	<p>
+	  		Dieses Projekt ist anonym. Nicht, weil ich etwas zu verbergen habe, sondern weil es nicht um mich geht. Ich will keine Interviews geben, keinen Nutzen daraus ziehen und keine Aufmerksamkeit auf mich lenken. Ich tue nichts zur Sache. Es gibt viele Menschen und Organisationen, die so viel mehr leisten als ich – und die verdienen das Rampenlicht. Durch die Anonymität kann ich jedoch keinen Verein gründen, und es gibt keine Spendenquittungen. Alles, was ich bieten kann, ist mein Wort, dass jeder Cent, der gespendet wird, direkt verwendet wird, um jemandem einen kleinen Moment der Freude zu schenken. Was auch immer das Wort einer anonymen Person für dich wert ist.
+	  	</p>
+	  	<p>
+	  		Ich bin weder Teil einer Kirche noch einer politischen Partei. Ich glaube nicht an Gott. Aber ich glaube an Menschen, an Mitgefühl und an die Kraft, unsere Gemeinschaft stärker zu machen. Ich möchte niemanden ausschließen, sondern im Gegenteil – Menschen zusammenbringen. Es geht darum, Brücken zu bauen, nicht Mauern.
+	  	</p>
+	  	<p>
+	  		Wenn du hier bist, weil Santa dich besucht hat: Gern geschehen! Fühl dich geliebt und umarmt, denn du hast es verdient. Du schuldest mir nichts. Wenn du eines Tages in der Lage bist, diese Geste weiterzugeben, wäre das schön – aber lass dich nicht unter Druck setzen. Manchmal geht es einfach nur darum, anzunehmen und zu spüren, dass man nicht allein ist.
+	  	</p>
+	  </section>
+	  <section id="english">
+	  	<h2>What is Quiet Santa?</h2>
+	  	<p>
+	  		Quiet Santa is a heartfelt project that will finally become a reality in 2025 – something I’ve been thinking about for years. I grew up with little, and although I’m far from being wealthy, I’m doing okay now. But I know that many people out there aren’t. Parents – and especially single parents – often carry an enormous burden, not only to care for their children but also to create those special moments many of us remember so fondly from our own childhood.
+	  	</p>
+	  	<p>
+	  		I have no illusions. I probably won’t be able to change the lives of many people – perhaps not even the life of a single person. But I want to try. And I hope I can inspire others to join in. Because I know how tough life can be. And sometimes, a small spark, a little light at the end of the tunnel, is enough to rekindle hope and give you the strength to make things better.
+	  	</p>
+	  	<p>
+	  		This project is anonymous. Not because I have something to hide, but because it’s not about me. I don’t want to give interviews, gain any benefit from it, or draw attention to myself. I don’t matter here. There are many people and organizations that do so much more than I ever could – and they deserve the spotlight. Being anonymous means I can’t establish a formal organization, and there won’t be any donation receipts. All I can offer is my word that every cent donated will go directly toward creating a little moment of joy for someone. Whatever the word of an anonymous person is worth to you.
+	  	</p>
+	  	<p>
+	  		I am neither part of a church nor a political party. I don’t believe in God. But I believe in people, in compassion, and in the power to strengthen our community. I want to exclude no one; in fact, I want to bring people together. It’s about building bridges, not walls.
+	  	</p>
+	  	<p>
+	  		If you’re here because Santa paid you a visit: You’re welcome! Please feel loved and embraced – you deserve it. You owe me nothing. If one day you’re in a position to pay it forward, that would be wonderful – but don’t feel pressured to do so. Sometimes it’s simply about accepting and knowing that you’re not alone.
+	  	</p>  	
+	  </section>
+	  <section dir="rtl" id="arabic">
+		<h2>ما هو مشروع Quiet Santa؟</h2>
+		<p>
+			مشروع Quiet Santa هو مبادرة نابعة من القلب، ستصبح أخيرًا حقيقة في عام 2025 – وهو شيء فكرت فيه منذ سنوات. لقد نشأت في ظروف متواضعة، وعلى الرغم من أنني بعيد كل البعد عن الثراء، إلا أنني بخير الآن. ولكنني أعلم أن هناك العديد من الأشخاص الذين ليسوا كذلك. الآباء – وخاصة الأمهات أو الآباء الذين يربون أطفالهم بمفردهم – يتحملون عبئًا كبيرًا، ليس فقط لتوفير احتياجات أطفالهم، ولكن أيضًا لخلق تلك اللحظات الخاصة التي يتذكرها الكثير منا بحب من طفولتنا.
+		</p>
+		<p>
+			ليس لدي أوهام. ربما لن أستطيع تغيير حياة الكثير من الناس – وربما حتى حياة شخص واحد. ولكنني أريد أن أحاول. وآمل أن أتمكن من إلهام الآخرين للانضمام أيضًا. لأنني أعلم أن الحياة قد تكون صعبة. وأحيانًا، يكفي شرارة صغيرة، أو ضوء خافت في نهاية النفق، لإعادة الأمل ومنحك القوة لتغيير الأمور نحو الأفضل.
+		</p>
+		<p>
+			هذا المشروع مجهول الهوية. ليس لأن لدي شيئًا أخفيه، بل لأن الأمر ليس متعلقًا بي. لا أريد إجراء مقابلات، أو الاستفادة من ذلك بأي طريقة، أو جذب الانتباه إلى نفسي. أنا لست المهم هنا. هناك العديد من الأشخاص والمنظمات الذين يقومون بأكثر مما يمكنني القيام به – وهم من يستحقون الضوء والاهتمام. أن يكون المشروع مجهولًا يعني أيضًا أنني لا أستطيع تأسيس منظمة رسمية، ولن يكون هناك شهادات تبرع. كل ما يمكنني تقديمه هو كلمتي بأن كل قرش يتم التبرع به سيُستخدم لجلب لحظة صغيرة من الفرح لشخص ما. كل ما تعنيه لك كلمة شخص مجهول.
+		</p>
+		<p>
+			أنا لست جزءًا من أي كنيسة أو حزب سياسي. لا أؤمن بالله. لكنني أؤمن بالناس، وبالتعاطف، وبقوة تقوية مجتمعنا. لا أريد استبعاد أحد؛ على العكس، أريد جمع الناس معًا. الأمر يتعلق ببناء جسور، وليس حواجز.
+		</p>
+		<p>
+			إذا كنت هنا لأن سانتا زارك: أهلاً وسهلاً! من فضلك، اشعر بأنك محبوب ومعانق – لأنك تستحق ذلك. أنت لا تدين لي بشيء. إذا كنت يومًا في وضع يمكنك من خلاله تمرير هذا العمل الطيب إلى شخص آخر، فسيكون ذلك رائعًا – لكن لا تشعر بأي ضغط. في بعض الأحيان، الأمر يتعلق فقط بالقبول ومعرفة أنك لست وحد  	
+		</p>
+	  </section>
+	  <section id="turkish">
+	  	<h2>Quiet Santa nedir?</h2>
+	  	<p>
+	  		Quiet Santa, 2025 yılında nihayet gerçeğe dönüşecek bir gönül projesi – yıllardır üzerinde düşündüğüm bir şey. Az imkanlarla büyüdüm ve zengin olmaktan çok uzağım, ama şu an iyi durumdayım. Fakat birçok insanın aynı şansa sahip olmadığını biliyorum. Özellikle ebeveynler – ve en çok da tek başına çocuk büyüten ebeveynler – sadece çocuklarına bakmakla kalmayıp, aynı zamanda birçoklarımızın çocukluklarından sevgiyle hatırladığı o özel anları yaratma yükünü de taşıyor.
+	  	</p>
+	  	<p>
+	  		Hayalci değilim. Büyük olasılıkla birçok insanın hayatını değiştiremeyeceğim – belki tek bir kişinin hayatını bile. Ama denemek istiyorum. Ve başkalarını da buna katılmaya teşvik edebileceğimi umuyorum. Çünkü hayatın ne kadar zor olabileceğini biliyorum. Ve bazen küçük bir kıvılcım, tünelin sonundaki bir ışık, umutları yeniden canlandırmak ve işleri daha iyi hale getirecek gücü bulmak için yeterlidir.
+	  	</p>
+	  	<p>
+	  		Bu proje tamamen anonimdir. Saklayacak bir şeyim olduğu için değil, çünkü mesele ben değilim. Röportaj vermek, bundan herhangi bir fayda sağlamak veya dikkati üzerime çekmek istemiyorum. Burada önemli olan ben değilim. Benden çok daha fazlasını yapan birçok insan ve organizasyon var – ve onlar hak ettikleri ilgiyi görmeli. Anonim olmak, resmi bir dernek kuramayacağım ve bağış makbuzu sağlayamayacağım anlamına geliyor. Tek sunabileceğim şey, bağışlanan her kuruşun birine küçük bir mutluluk anı yaratmak için kullanılacağına dair sözüm. Anonim bir kişinin sözü sizin için ne kadar değerliyse.
+	  	</p>
+	  	<p>
+	  		Ne bir kiliseye ne de bir siyasi partiye üyeyim. Tanrı’ya inanmıyorum. Ama insanlara, şefkate ve topluluğumuzu güçlendirme gücüne inanıyorum. Kimseyi dışlamak istemiyorum; aksine, insanları bir araya getirmek istiyorum. Mesele duvarlar değil, köprüler inşa etmek.
+	  	</p>
+	  	<p>
+	  		Eğer buradaysanız çünkü Noel Baba size uğradı: Rica ederim! Lütfen kendinizi sevgi dolu ve kucaklanmış hissedin – bunu hak ediyorsunuz. Bana hiçbir şey borçlu değilsiniz. Bir gün bu iyiliği başkalarına aktarabilecek durumda olursanız, bu harika olurdu – ama kendinizi baskı altında hissetmeyin. Bazen mesele sadece kabul etmek ve yalnız olmadığınızı bilmekten ibarettir.
+	  	</p>
+	  </section>
+	  <section id="ukrainian">
+	  	<h2>Що таке Quiet Santa?</h2>
+	  	<p>
+	  		Quiet Santa – це проєкт від щирого серця, який нарешті стане реальністю у 2025 році – те, про що я мріяв роками. Я виріс у скромних умовах, і хоча я далеко не багатий, зараз у мене все добре. Але я знаю, що багато людей навколо не мають таких можливостей. Особливо це стосується батьків – а ще більше тих, хто виховує дітей самостійно. Вони несуть величезний тягар – не лише забезпечити своїх дітей, але й створити ті особливі моменти, які багато з нас так тепло згадують зі свого дитинства.
+	  	</p>
+	  	<p>
+	  		Я не маю ілюзій. Я, ймовірно, не зможу змінити життя багатьох людей – можливо, навіть не зміню жодного. Але я хочу спробувати. І я сподіваюся, що зможу надихнути інших приєднатися. Бо я знаю, наскільки життя буває важким. І іноді достатньо маленької іскри, невеликого світла в кінці тунелю, щоб відновити надію і знайти сили змінити ситуацію на краще.
+	  	</p>
+	  	<p>
+	  		Цей проєкт анонімний. Не тому, що мені є що приховувати, а тому, що справа не в мені. Я не хочу давати інтерв’ю, отримувати будь-яку вигоду чи привертати увагу до себе. Тут я не важливий. Є багато людей та організацій, які роблять значно більше, ніж я коли-небудь зможу, – і вони заслуговують на визнання. Бути анонімним також означає, що я не можу зареєструвати офіційну організацію, і не буде жодних квитанцій на пожертви. Все, що я можу запропонувати, – це моє слово, що кожна копійка, яка буде пожертвувана, піде на створення маленького моменту радості для когось. Що б не означало слово анонімної людини для вас.
+	  	</p>
+	  	<p>
+	  		Я не належу до жодної церкви чи політичної партії. Я не вірю в Бога. Але я вірю в людей, у співчуття та в силу робити нашу спільноту сильнішою. Я не хочу нікого виключати; навпаки – я хочу об’єднувати людей. Це про будування мостів, а не стін.
+	  	</p>
+	  	<p>
+	  		Якщо ви тут, тому що вас відвідав Санта: Будь ласка! Відчуйте себе улюбленими та обійнятими – ви це заслуговуєте. Ви мені нічого не винні. Якщо колись у вас буде можливість передати цю доброту далі, це буде чудово – але не відчувайте тиску. Іноді справа просто в тому, щоб прийняти та знати, що ви не самотні.
+	  	</p>  	
+	  </section>
+	  <section id="polish">
+	  	<h2>Czym jest Quiet Santa?</h2>
+	  	<p>
+	  		Quiet Santa to projekt z serca, który w 2025 roku w końcu stanie się rzeczywistością – coś, o czym myślałem od lat. Dorastałem w skromnych warunkach i choć daleko mi do bogactwa, teraz radzę sobie dobrze. Ale wiem, że wielu ludzi ma trudniej. Szczególnie rodzice – a zwłaszcza samotni rodzice – często noszą ogromne brzemię: nie tylko opiekują się swoimi dziećmi, ale także starają się stworzyć te wyjątkowe chwile, które wielu z nas tak ciepło wspomina z dzieciństwa.
+	  	</p>
+	  	<p>
+	  		Nie mam złudzeń. Prawdopodobnie nie zmienię życia wielu ludzi – może nawet nie zmienię życia jednej osoby. Ale chcę spróbować. I mam nadzieję, że uda mi się zachęcić innych, by dołączyli. Bo wiem, jak trudne może być życie. A czasami wystarczy mała iskra, trochę światła na końcu tunelu, by odzyskać nadzieję i znaleźć siłę, by zmienić coś na lepsze.
+	  	</p>
+	  	<p>
+	  		Ten projekt jest anonimowy. Nie dlatego, że mam coś do ukrycia, ale dlatego, że to nie o mnie chodzi. Nie chcę udzielać wywiadów, czerpać z tego żadnych korzyści ani przyciągać uwagi do siebie. Ja tutaj nie jestem ważny. Jest wiele osób i organizacji, które robią znacznie więcej niż ja kiedykolwiek mógłbym – i to one zasługują na uznanie. Bycie anonimowym oznacza również, że nie mogę założyć oficjalnej organizacji i nie będzie możliwości otrzymania potwierdzenia wpłaty. Jedyne, co mogę zaoferować, to moje słowo, że każda złotówka przekazana na ten cel zostanie wykorzystana, by sprawić komuś choćby chwilę radości. Cokolwiek dla ciebie znaczy słowo anonimowej osoby.
+	  	</p>
+	  	<p>
+	  		Nie należę do żadnego kościoła ani partii politycznej. Nie wierzę w Boga. Ale wierzę w ludzi, we współczucie i w siłę, która może wzmacniać nasze społeczeństwo. Nie chcę nikogo wykluczać; przeciwnie – chcę łączyć ludzi. Chodzi o budowanie mostów, a nie murów.
+	  	</p>
+	  	<p>
+	  		Jeśli trafiłeś tutaj, bo odwiedził cię Święty Mikołaj: Proszę bardzo! Poczuj się kochany i przytulony – zasługujesz na to. Nic mi nie jesteś winien. Jeśli pewnego dnia będziesz w stanie przekazać tę dobroć dalej, to będzie wspaniałe – ale nie czuj presji. Czasami chodzi tylko o to, by przyjąć pomoc i wiedzieć, że nie jesteś sam.
+	  	</p>
+	  </section>
+	  <footer>
+	  	<a href="mailto:santa@qslr.de">santa@qslr.de</a> | <a href="https://bsky.app/profile/quietsanta.bsky.social">Quiet Santa on Bluesky</a>
+	  </footer>
+	</div>
+  </body>
+</html>
